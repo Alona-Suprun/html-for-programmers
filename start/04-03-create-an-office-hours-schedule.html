@@ -6,10 +6,78 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Create An Office Hours Schedule</title>
+  <style>
+    table {
+      border: 0.1rem green solid;
+    }
+  
+    thead {
+      background-color: green;
+      color: white
+    }
+  
+    th {
+      color: white;
+      padding: 1rem;
+      background-color: green
+    }
+  
+    td {
+      padding: 1rem;
+      color: green;
+      border: 0.1rem green solid;
+    }
+  
+    table {
+      text-align: center;
+    }
+  
+    tfoot {
+      background-color: green;
+    }
+  
+    tfoot td {
+      color: white;
+    }
+  </style>
 </head>
 
 <body>
-  
+  <table>
+      <tr>
+        <td></td>
+        <th scope="col">Monday</th>
+        <th scope="col">Tuesday</th>
+        <th scope="col">Wednesday</th>
+        <th scope="col">Thursday</th>
+        <th scope="col">Friday</th>
+        
+      </tr>
+      <tr>
+        <th scope="row">9:00 to 10:00</th>
+        <td>Closed</td>
+        <td>Open</td>
+        <td>Closed</td>
+        <td>Closed</td>
+        <td>Open</td>
+      </tr>
+      <tr>
+        <th scope="row">11:00 to 12:00</th>
+        <td>Open</td>
+        <td>Open</td>
+        <td>Closed</td>
+        <td>Closed</td>
+        <td>Open</td>
+      </tr>
+      <tr>
+        <th scope="row">13:00 to 14:00</th>
+        <td>Closed</td>
+        <td>Open</td>
+        <td>Closed</td>
+        <td>Open</td>
+        <td>Closed</td>
+      </tr>
+  </table>
 </body>
 
 </html>
