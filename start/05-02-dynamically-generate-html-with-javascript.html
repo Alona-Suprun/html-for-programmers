@@ -19,6 +19,7 @@
   <div class="wrapper"></div>
 
   <script>
+    const wrapper = document.querySelector('.wrapper');
     const socials = [
       {
         name: 'Mai Sarabia',
@@ -45,6 +46,27 @@
         avatar: '../assets/avatar-4.png'
       }
     ];
+    socials.forEach(user => {
+      let socialWrapper = document.createElement('div');
+      socialWrapper.style = 'background: lightgrey; border: 2px grey solid; margin: 1rem auto; text-align: center; width: 20%; padding: 1rem; ';
+      let avatar = document.createElement('img');
+      avatar.src = user.avatar;
+      avatar.alt = user.name;
+      socialWrapper.appendChild(avatar);
+      let name = document.createElement('h3');
+      name.textContent = user.name;
+      socialWrapper.appendChild(name);
+      let city = document.createElement('p');
+      city.innerText = user.city;
+      socialWrapper.appendChild(city);
+      let country = document.createElement('p');
+      country.innerText = user.country;
+      socialWrapper.appendChild(country);
+      let addFriendButton = document.createElement('button');
+      addFriendButton.innerText = 'Add Friend';
+      socialWrapper.append(addFriendButton);
+      wrapper.appendChild(socialWrapper);
+    })
 
   </script>
 </body>
